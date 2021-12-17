@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Fetching all the Data</h1>
+    <table>
+        <thead>
+            <th>Subcategory</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Popularity</th>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let product of products">
+                <td>{{product.subcategory}}</td>
+                <td>{{product.title}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.popularity}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
